@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 200px 1fr 250px;
+  height: 100vh;
+}
+
+.left-panel,
+.right-panel {
+  padding: 12px;
+  background: #f4f4f4;
+}
+
+.left-panel h3,
+.right-panel h3 {
+  margin-top: 0;
+}
+
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+}
+
+canvas {
+  border: 1px solid #aaa;
+}
+
+button {
+  padding: 8px;
+  width: 100%;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="color"],
+input[type="range"] {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel,
+.right-panel,
+.layers-panel {
+  width: 220px;
+  padding: 10px;
+  background: #f3f3f3;
+}
+
+.canvas-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layer {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.layer.active {
+  background: #ddd;
+}
+
+
+.layers-panel {
+  width: 220px;
+  background: #f5f5f5;
+  padding: 10px;
+}
+
+.layer {
+  padding: 6px;
+  margin-bottom: 4px;
+  background: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.layer.active {
+  background: #dbeafe;
+}
+
+.layer-actions {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.layer-actions button {
+  font-size: 12px;
+  cursor: pointer;
+}
